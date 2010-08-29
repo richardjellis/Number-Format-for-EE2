@@ -1,0 +1,12 @@
+Convert numbers like "1234" into human friendly numbers like "1,234.00".  It's based on your PHP regional settings and the PHP number_format function.
+
+Works in three ways.
+
+1) Number as a paramater:
+	{exp:number_format number="1234" decimals="2"}
+
+2) Number as tag content:
+	{exp:number_format decimals="2"}1234{/exp:number_format}
+
+3) Number as a publish filter:
+	Setup in the control panel.
